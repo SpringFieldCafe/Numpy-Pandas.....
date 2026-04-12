@@ -19,3 +19,4 @@ for column in B.T:
 
 for item in B.flat:
     print(item)
+
