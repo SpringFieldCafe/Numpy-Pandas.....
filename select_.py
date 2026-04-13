@@ -1,0 +1,26 @@
+import numpy as np
+import pandas as pd
+
+dates=pd.date_range('20260303',periods=6)
+df=pd.DataFrame(np.arange(24).reshape((6,4)),index=dates,columns=['A','B','C','D'])
+
+print(df)
+print(df['A'])
+print(df.A)
+print(df[0:3])
+print(df['20260303':'20260306'])
+print(df.loc['20260303'])
+print(df.loc[:,['A','C']])
+print(df.loc['20260303',['A','C']])
+print(df.iloc[3,1])
+print(df.iloc[1:5:-1,1:3])
+print(df.iloc[0:4:-1,1:3])
+# print(df.ix[:3])
+# print(df.ix[:3,['A','C']])
+print(df.A>7)
+print(df[df.A>7])
+print(df.iloc[4:2:-1, 1:3])
+e=list(range(1,9))
+print(e)
+print(e[2:7:-1])
+print(e[7:2:-1])
