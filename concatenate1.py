@@ -11,6 +11,8 @@ print(df1)
 print(df2)
 print(df3)
 
+l=pd.merge(df1,df2,on=['a'],how='outer')
+print("l::::\n",l)
 
 res=pd.concat([df1,df2,df3],axis=0)
 print(res)
